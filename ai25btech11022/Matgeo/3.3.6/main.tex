@@ -1,0 +1,88 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+% Marks the beginning of the document
+\begin{document}
+\title{3.3.6}
+\author{ai25btech11022 - Narshitha}
+\maketitle
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\textbf{Question}:\\
+ Construct a triangle ABC with side $\vec{BC}=6cm,\angle{B}=45\degree,\angle{A}=105\degree$ \\
+ \textbf{Solution}:\\
+ Let position vector of $\vec{B}$ be $\myvec{0\\0}$ and a,b,c be the sides opposite to the vertices A,B and C\\
+ Given a=6cm;
+ \begin{align}
+     \vec{C}=\myvec{6\\0}\\
+     \vec{A}=\myvec{c\cos{\angle{B}}\\c\sin{\angle{B}}}\\
+     \vec{A}=\myvec{\frac{c}{\sqrt{2}}\\\frac{c}{\sqrt{2}}}\\
+     \angle{A}+\angle{B}+\angle{C}=180\degree\\
+     \therefore \angle{C}=30\degree
+ \end{align}
+ in $\Delta ABC$
+ \begin{align}
+     b\cos{\angle{C}} +c\cos{\angle{B}} =a\\
+     b\sin{\angle{C}}-c\sin{\angle{B}} =0\\
+     \myvec{\cos{\angle{C}} && \cos{\angle{B}}\\ \sin{\angle{C}} && -\sin{\angle{B}}}\myvec{b\\c}=\myvec{6\\0}
+ \end{align}
+ using augmented matrix 
+ \begin{align}
+     \myvec{\cos{\angle{C}} && \cos{\angle{B}} && \vrule && 6\\ \sin{\angle{C}} && -\sin{\angle{B}} && \vrule && 0}\\
+     \myvec{\sqrt{3}/2 && 1/\sqrt{2}&& \vrule && 6 \\1/2 && -1/\sqrt{2} &&  \vrule && 0}
+ \end{align}
+ $R_2 \longrightarrow \sqrt{3}R_2 -R_1$
+ \begin{align}
+     \myvec{\sqrt{3}/2 && 1/\sqrt{2}&& \vrule && 6 \\0 && -\sqrt{3}-1/\sqrt{2} &&  \vrule && -6}\\
+     \implies c= \frac{6\sqrt{2}}{\sqrt{3}+1}\\
+   \therefore  \vec{A}=\myvec{6\brak{\sqrt{3}-1}\\6\brak{\sqrt{3}-1}}
+ \end{align} 
+ \begin{figure}[H]
+     \centering
+     \includegraphics[width=0.5\linewidth]{figs/fig1.png}
+     \caption{ }
+     \label{fig:placeholder}
+ \end{figure}
+\end{document}
