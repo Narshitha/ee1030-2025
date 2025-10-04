@@ -67,7 +67,7 @@ columns=fullflexible
 
 \numberwithin{equation}{section}
 
-\title{3.3.6}
+\title{4.4.18}
 \author{ai25btech11022 - Narshitha}
 % \maketitle
 % \newpage
@@ -77,36 +77,21 @@ columns=fullflexible
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi} 
 \textbf{Question}:\\
- Construct a triangle ABC with side $\vec{BC}=6cm,\angle{B}=45,\angle{A}=105$ \\
- \textbf{Solution}:\\
- Let position vector of $\vec{B}$ be $\myvec{0\\0}$ and a,b,c be the sides opposite to the vertices A,B and C\\
- Given a=6cm;
- \begin{align}
-     \vec{C}=\myvec{6\\0}\\
-     \vec{A}=\myvec{c\cos{\angle{B}}\\c\sin{\angle{B}}}\\
-     \vec{A}=\myvec{\frac{c}{\sqrt{2}}\\\frac{c}{\sqrt{2}}}\\
-     \angle{A}+\angle{B}+\angle{C}=180\\
-     \therefore \angle{C}=30
- \end{align}
- in $\Delta ABC$
- \begin{align}
-     b\cos{\angle{C}} +c\cos{\angle{B}} =a\\
-     b\sin{\angle{C}}-c\sin{\angle{B}} =0\\
-     \myvec{\cos{\angle{C}} && \cos{\angle{B}}\\ \sin{\angle{C}} && -\sin{\angle{B}}}\myvec{b\\c}=\myvec{6\\0}
- \end{align}
- using augmented matrix 
- \begin{align}
-     \myvec{\cos{\angle{C}} && \cos{\angle{B}} && \vrule && 6\\ \sin{\angle{C}} && -\sin{\angle{B}} && \vrule && 0}\\
-     \myvec{\sqrt{3}/2 && 1/\sqrt{2}&& \vrule && 6 \\1/2 && -1/\sqrt{2} &&  \vrule && 0}
- \end{align}
- $R_2 \longrightarrow \sqrt{3}R_2 -R_1$
- \begin{align}
-     \myvec{\sqrt{3}/2 && 1/\sqrt{2}&& \vrule && 6 \\0 && -\sqrt{3}-1/\sqrt{2} &&  \vrule && -6}\\
-     \implies c= \frac{6\sqrt{2}}{\sqrt{3}+1}\\
-   \therefore  \vec{A}=\myvec{6\brak{\sqrt{3}-1}\\6\brak{\sqrt{3}-1}}
- \end{align}
+If the point $\vec{A}\brak{x,y},\vec{B}\brak{3,6} $and $\vec{C}\brak{-3,4}$ are collinear,show that $x-3y+15=0$\\
+\textbf{Solution}:\\
+As $\vec{A},\vec{B} $and $\vec{C}$ are collinear\\
+\begin{align}
+    rank{\myvec{\vec{A-B}&& \vec{B-C}}}^T =1\\
+    \myvec{x-3 && y-6 \\x+3 && y-4}
+\end{align}
+$R_2\longrightarrow R_2 -\frac{x+3}{x-3},R_1$
+\begin{align}
+    \myvec{x-3 && y-6 \\0 && y-4-\brak{y-6}\frac{x+3}{x-3}}\\
+    \implies  y-4-\brak{y-6}\frac{x+3}{x-3} =0 \\
+    \therefore x-3y+15=0
+\end{align}  
  \frametitle{Graphical Representation}
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{figs/fig1.png}
+    \includegraphics[width=0.8\linewidth]{figs/fig1.png}
 \end{center}
 \end{document}

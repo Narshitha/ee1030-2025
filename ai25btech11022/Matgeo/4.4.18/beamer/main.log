@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.16)  4 OCT 2025 19:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.16)  4 OCT 2025 20:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1126,20 +1126,13 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
 (Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 80.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 (Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 80.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-<figs/fig1.png, id=40, 1168.365pt x 910.40125pt>
+<figs/fig1.png, id=22, 940.51375pt x 750.805pt>
 File: figs/fig1.png Graphic file (type png)
 <use figs/fig1.png>
-Package pdftex.def Info: figs/fig1.png  used on input line 110.
-(pdftex.def)             Requested size: 171.14764pt x 133.35922pt.
+Package pdftex.def Info: figs/fig1.png  used on input line 95.
+(pdftex.def)             Requested size: 273.83728pt x 218.59856pt.
 
-[4 <./figs/fig1.png>]
+[2] [3 <./figs/fig1.png>]
 \tf@nav=\write6
 \openout6 = `main.nav'.
 
@@ -1158,9 +1151,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26454 strings out of 474222
- 500766 string characters out of 5748733
- 1937975 words of memory out of 5000000
+ 26452 strings out of 474222
+ 500749 string characters out of 5748733
+ 1934975 words of memory out of 5000000
  48176 multiletter control sequences out of 15000+600000
  565701 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1176,10 +1169,10 @@ ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msam10.pfb>
-Output written on main.pdf (4 pages, 144181 bytes).
+Output written on main.pdf (3 pages, 130945 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
